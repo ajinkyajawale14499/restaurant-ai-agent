@@ -1,0 +1,13 @@
+{
+    "2025-03-27": {
+        "12:00 PM": {"available": 3},
+        "2:00 PM": {"available": 5},
+        "7:00 PM": {"available": 2},
+        "9:00 PM": {"available": 0}
+    },
+    "2025-03-28": {
+        "1:00 PM": {"available": 4},
+        "3:00 PM": {"available": 6},
+        "8:00 PM": {"available": 1}
+    }
+}

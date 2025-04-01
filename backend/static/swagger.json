@@ -1,0 +1,92 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Restaurant API",
+    "description": "API documentation for the Restaurant Management System",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/chat": {
+      "post": {
+        "summary": "Process a chat message",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string",
+                    "description": "User message text"
+                  },
+                  "session_id": {
+                    "type": "string",
+                    "description": "Optional session ID for conversation tracking"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "response": {
+                      "type": "object",
+                      "properties": {
+                        "text": {
+                          "type": "string",
+                          "description": "Bot response text"
+                        }
+                      }
+                    },
+                    "session_id": {
+                      "type": "string",
+                      "description": "Session ID for conversation tracking"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/menu": {
+      "get": {
+        "summary": "Get the restaurant menu",
+        "responses": {
+          "200": {
+            "description": "List of menu items"
+          }
+        }
+      }
+    },
+    "/api/availability": {
+      "get": {
+        "summary": "Get table availability",
+        "parameters": [
+          {
+            "name": "date",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Optional date parameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Available dates and times"
+          }
+        }
+      }
+    }
+  }
+} 

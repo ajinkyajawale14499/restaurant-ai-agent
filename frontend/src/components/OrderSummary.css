@@ -1,0 +1,88 @@
+.order-summary {
+    padding: 10px;
+  }
+  
+  .order-summary h2 {
+    margin-top: 0;
+    color: #3a8d45;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  
+  .order-info {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .order-id {
+    font-weight: bold;
+    color: #3a8d45;
+    font-size: 16px;
+    margin-top: 0;
+  }
+  
+  .order-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #e6f4e8;
+    color: #3a8d45;
+  }
+  
+  .order-items {
+    margin-bottom: 15px;
+  }
+  
+  .order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-summary th,
+  .order-summary td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .order-summary th {
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .order-summary tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .order-summary tfoot tr {
+    font-weight: bold;
+  }
+  
+  .order-summary tfoot td {
+    border-top: 2px solid #eee;
+  }
+  
+  .confirmation-message {
+    background-color: #e6f4e8;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .confirmation-message p {
+    margin: 5px 0;
+  }
+  
+  .order-instructions {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    margin-top: 15px;
+  }

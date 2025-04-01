@@ -1,0 +1,101 @@
+.booking-summary {
+    padding: 10px;
+  }
+  
+  .booking-summary h2 {
+    margin-top: 0;
+    color: #3a8d45;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  
+  .booking-details {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .booking-detail {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+  
+  .booking-detail:last-child {
+    margin-bottom: 0;
+  }
+  
+  .booking-detail .label {
+    font-weight: bold;
+    width: 120px;
+    color: #555;
+  }
+  
+  .booking-detail .value {
+    flex: 1;
+  }
+  
+  .booking-detail .confirmation-number {
+    font-weight: bold;
+    color: #3a8d45;
+  }
+  
+  .booking-detail .status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .booking-detail .status.confirmed {
+    background-color: #e6f4e8;
+    color: #3a8d45;
+  }
+  
+  .booking-detail .status.cancelled {
+    background-color: #fee7e7;
+    color: #d23030;
+  }
+  
+  .booking-detail.special-requests {
+    flex-direction: column;
+  }
+  
+  .booking-detail.special-requests .label {
+    margin-bottom: 5px;
+  }
+  
+  .booking-detail.special-requests .value {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    font-style: italic;
+  }
+  
+  .confirmation-message {
+    background-color: #e6f4e8;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .confirmation-message p {
+    margin: 5px 0;
+  }
+  
+  .cancel-info {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .booking-instructions {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    margin-top: 15px;
+  }
